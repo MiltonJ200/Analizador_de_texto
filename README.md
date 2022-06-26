@@ -1,4 +1,5 @@
-#Analizador_de_texto
+**Analizador_de_texto**
+
 **Este analizador de texto fue elaborado con el fin de aprendizaje de python**
 
 - Su funcion inicial es consultar al usuario una frase o palabras para posteriormente su analisis.
