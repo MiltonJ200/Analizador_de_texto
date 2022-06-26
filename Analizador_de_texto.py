@@ -6,20 +6,27 @@ ultima_letra = texto[-1] #utilizamos esta forma para identificar la ULTIMA letra
 lista_texto = texto.split()
 
 #print(lista_texto) #usar para visualizar la lista de texto
-print("Muy bien, continua...")
+print("Muy bien, continua...\nA continuacion digitaras 3 letras para hacer funcionar el analizador de texto")
+
 lista_letras = ['','','']
-lista_letras[0] = input("Porfavor ingrese la primera(1era) letra para analizar el texto:\n").lower() #   *  Peticion al usuario que sirven para analizar y conteo de
-lista_letras[1] = input("Porfavor ingrese la segunda(2da) letra para analizar el texto:\n").lower()  #   *  cuantas letras seleccionadas existen en el texto
-lista_letras[2] = input("Porfavor ingrese la tercera(3era) letra para analizar el texto:\n").lower() #   *  que ingreso el usuario
+lista_letras[0] = input("Porfavor ingrese la primera (1era) letra para analizar el texto:\n").lower() #   *  Peticion al usuario que sirven para analizar y conteo de
+lista_letras[1] = input("Porfavor ingrese la segunda (2da) letra para analizar el texto:\n").lower()  #   *  cuantas letras seleccionadas existen en el texto
+print("Uno mas...")
+lista_letras[2] = input("Porfavor ingrese la tercera (3era) letra para analizar el texto:\n").lower() #   *  que ingreso el usuario
 #print(lista_letras) usar para visualizar la lista de letras
+
 print(f" Se analizo un total de {texto.count(lista_letras[0])} letras {lista_letras[0].upper()} en el texto") # Realiza el conteo almacenado
 print(f" Se analizo un total de {texto.count(lista_letras[1])} letras {lista_letras[1].upper()} en el texto") # en la lista de letras que se le
 print(f" Se analizo un total de {texto.count(lista_letras[2])} letras {lista_letras[2].upper()} en el texto") # solicito al usuario.
-print(f"Tu texto tiene en total:\n {len(lista_texto)} palabras")
-print(f"En el texto la primera letra del texto es \"{primera_letra.upper()}\" y la ultima letra es \"{ultima_letra.upper()}\"")
-print("las palabras en orden inverso se ve de la siguiente manera: \n")
+print(f"\nTu texto tiene en total:\n {len(lista_texto)} palabras")
+print(f"\nEn el texto la primera letra del texto es \"{primera_letra.upper()}\" y la ultima letra es \"{ultima_letra.upper()}\"")
+
+print("\nLas palabras en orden inverso se ve de la siguiente manera:")
 lista_texto.reverse()
 print(" ".join(lista_texto))
 
+control_de_texto = "python" in lista_texto
+diccionario_VF = {True:'si', False:'no'}
+print(f"\nEl resultado si existe o no la palabra \"Python\" en el texto {diccionario_VF[control_de_texto]} existe en el texto")
 
 
