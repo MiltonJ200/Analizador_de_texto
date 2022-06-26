@@ -18,7 +18,7 @@ lista_letras[2] = input("Porfavor ingrese la tercera (3era) letra para analizar 
 print(f" Se analizo un total de {texto.count(lista_letras[0])} letras {lista_letras[0].upper()} en el texto") # Realiza el conteo almacenado
 print(f" Se analizo un total de {texto.count(lista_letras[1])} letras {lista_letras[1].upper()} en el texto") # en la lista de letras que se le
 print(f" Se analizo un total de {texto.count(lista_letras[2])} letras {lista_letras[2].upper()} en el texto") # solicito al usuario.
-print(f"\nTu texto tiene en total:\n {len(lista_texto)} palabras")
+print(f"\nTu texto tiene en total:\n {len(lista_texto)} palabras") #contamos la cantidad de palabras que existen en el texto
 print(f"\nEn el texto la primera letra del texto es \"{primera_letra.upper()}\" y la ultima letra es \"{ultima_letra.upper()}\"") #consultamos cual es la primera y ultima letra
                                                                                                                                   #del texto
 
