@@ -8,6 +8,8 @@
 
 - Se hara busqueda de la primer letra y ultima letra del texto
 
+- Contamos la cantidad de palabras que existen en el texto 
+
 - Luego se mostraran las palabras invertidas del texto
 
 - Se analizara si existe la palabra python o no en el texto
